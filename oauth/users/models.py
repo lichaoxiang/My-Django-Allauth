@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+from allauth.account.models import EmailAddress
 
 
 class UserProfile(AbstractUser):
@@ -15,6 +16,14 @@ class UserProfile(AbstractUser):
         verbose_name = '用户信息'
         verbose_name_plural = verbose_name
         ordering = ['-id']
+
+    def email_verified(self):
+        if self.is_authenticated:
+            result = EmailAddress.objects.filter(email=self.email)
+            if len(result):
+                return result[0].verified
+        else:
+            return False
 
     def __str__(self):
         return self.username
