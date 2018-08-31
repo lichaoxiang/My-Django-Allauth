@@ -27,9 +27,20 @@
 - 克隆版本库至本地
 git@github.com:lichaoxiang/My-Django-Allauth.git
 
+- 安装依赖文件
+```
+pip install -r requirements.txt
+```
+
 - 创建 MySQL 数据库
 
 - 修改配置文件(password)
+
+- 生成数据库
+```
+python manage.py makemigrations
+python manage.py migrate
+```
 
 ### 参考资料 
 
