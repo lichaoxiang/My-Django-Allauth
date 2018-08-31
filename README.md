@@ -22,6 +22,15 @@
   [38]: http://p7kk8oo3f.bkt.clouddn.com/QQ20180831-220214@2x.png
   [39]: http://p7kk8oo3f.bkt.clouddn.com/QQ20180831-220428@2x.png
   
+### 使用步骤 
+
+- 克隆版本库至本地
+git@github.com:lichaoxiang/My-Django-Allauth.git
+
+- 创建 MySQL 数据库
+
+- 修改配置文件(password)
+
 ### 参考资料 
 
 <a href="https://django-allauth.readthedocs.io/en/latest/">https://django-allauth.readthedocs.io/en/latest/</a>
