@@ -1,0 +1,11 @@
+{% load account %}{% user_display user as user_display %}{% load i18n %}{% autoescape off %}{% blocktrans with site_name=current_site.name site_domain=current_site.domain %}
+来自 {{ site_name }} 的问候!
+
+您收到此电子邮件是因为您或其他人为您的用户帐户请求了邮箱验证。如果您未要求邮箱验证，则可以安全地忽略它。 若您需要邮箱验证，请点击下方的链接：
+
+{{ activate_url }}
+
+{% endblocktrans %}{% endautoescape %}
+{% blocktrans with site_name=current_site.name site_domain=current_site.domain %}感谢您使用 {{ site_name }}!
+
+{{ site_domain }}{% endblocktrans %}

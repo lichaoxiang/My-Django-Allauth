@@ -1,0 +1,10 @@
+{% extends "users/base.html" %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Account Inactive" %}{% endblock %}
+{% block user_title %}{% trans "Account Inactive" %}{% endblock %}
+
+{% block auth_content %}
+<p>{% trans "This account is inactive." %}</p>
+{% endblock %}

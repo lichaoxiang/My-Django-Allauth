@@ -1,0 +1,4 @@
+password_reset_key_message.txt 文件为用户重置密码的邮件内容
+
+
+email_confirmation_message.txt 文件为用户验证邮箱的邮件内容
